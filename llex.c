@@ -83,7 +83,7 @@ void luaX_init (lua_State *L) {
     ts->extra = cast_byte(i+1);  /* reserved word */
   }
 
-  TString *e2 = luaS_newliteral(L, "_ÎÊÐ");  /* create env name */
+  TString *e2 = luaS_newliteral(L, "_ОКР");  /* Здесь была непонятная кодировка, поставил _ОКР как у rst */
   luaC_fix(L, obj2gco(e2));  /* never collect this name */
   for (i=0; i<22; i++) {
     TString *ts = luaS_new(L, luaX_tokens_cyr[i]);
